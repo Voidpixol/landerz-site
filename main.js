@@ -24,18 +24,21 @@ const imgUrl = (n) => {
 async function getData(url) {
   let data = await fetch(url)
   .then(res => res.json())
-  .catch(err => {
-    console.log(err)
-    return undefined
-  })
+  .catch(err => err)
   return data
 }
 
 async function init(){
   let users = await getData(usersUrl)
   let posts = await getData(postsUrl)
-  testimonials = {users, posts}
 
+  if(Object.keys(posts).length === 0 || Object.keys(users).length === 0) {
+    console.error('ERROR FETCHING DATA')
+    return;
+  }
+  
+  testimonials = {users, posts}
+ 
   setTestimonial(1)
 
   let controls = ['#control-1', '#control-2', '#control-3', '#control-4']
@@ -43,7 +46,6 @@ async function init(){
   controls.forEach((element, index) => {
     element.addEventListener("click", () => setTestimonial(index + 1));
   })
-  
 }
 
 const setTestimonial = (n) => {
