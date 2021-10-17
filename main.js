@@ -12,6 +12,7 @@ const usersUrl = "https://jsonplaceholder.typicode.com/users"
 
 let testimonials = {}
 let currentTestimonial;
+const transitionTimer = 10;
 let transition;
 
 const imgUrl = (n) => {
@@ -79,6 +80,6 @@ const setTestimonial = (n) => {
   }
   currentTestimonial = n;
   let next = n >= 4 ? 1 : n + 1 
-  transition = setTimeout(() => setTestimonial(next), 5000)
+  transition = setTimeout(() => setTestimonial(next), transitionTimer * 1000)
 }
 init()

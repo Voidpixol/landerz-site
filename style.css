@@ -322,7 +322,7 @@ section{
   animation: fade-in 1s ease-out;
 }
 .fade-out{
-  animation: fade-out 1s ease-in;
+  animation: fade-out 1s linear;
 }
 #testimonial-container{
   min-height: 400px;
@@ -330,28 +330,20 @@ section{
 
 @keyframes fade-in {
   from { 
-    transform: translateY(50px);
-    filter: blur(10px);
     opacity: 0; 
   }
   to   
   { 
     opacity: 1;
-    transform: translateY(0px);
-    filter: blur(0px);
   }
 }
 @keyframes fade-out {
   from { 
-    transform: translateY(0px);
     opacity: 1;
-    filter: blur(0px);
   }
   to   
   { 
     opacity: 0;
-    transform: translateY(-50px);
-    filter: blur(10px);
   }
 }
 
