@@ -63,7 +63,7 @@
       </section>
       <section class="bg-gray features">
         <div class="container pb-8 font-sm">
-          <h1 class="text-center font-lg black px-4">Features</h1>
+          <h2 class="text-center font-lg black px-4">Features</h2>
           <div class="flex px-1 gap-2 wrap justify-center">
             <div
               class="
@@ -292,10 +292,10 @@
             alt=""
           />
           <div class="flex flex-col gap-1 font-sm txt-gray">
-            <h1 class="font-lg black txt-black">
+            <h2 class="font-lg black txt-black">
               Create Interactive<br />
               Prototypes
-            </h1>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing<br />
               elit. Voluptatem neque nisi architecto autem<br />
@@ -329,7 +329,7 @@
 
       <section class="bg-gray">
         <div class="container pb-8">
-          <h1 class="text-center font-lg black px-4">About Us</h1>
+          <h2 class="text-center font-lg black px-4">About Us</h2>
           <div class="flex md--flex-col justify-center items-center">
             <div class="flex-grow flex flex-row items-center justify-center">
               <img
@@ -340,10 +340,10 @@
             </div>
 
             <div class="md--mw-100 flex-grow">
-              <h2 class="font-md bold md--pt-2">
+              <h3 class="font-md bold md--pt-2">
                 Create Interactive<br />
                 Prototypes
-              </h2>
+              </h3>
               <p class="txt-gray font-sm px-1">
                 Eos cumque optio dolores exepturi rerum<br />
                 temporibus magni recusandae eveniet, totam omnis<br />
@@ -360,7 +360,7 @@
       </section>
       <section>
         <div class="container pb-8 flex flex-col items-center">
-          <h1 class="text-center font-lg black px-4">Testimonials</h1>
+          <h2 class="text-center font-lg black px-4">Testimonials</h2>
           <div
             id="testimonial-container"
             class="flex justify-center flex-col items-center gap-1"
@@ -392,30 +392,31 @@
       </section>
       <section class="bg-gray">
         <div class="container flex items-center flex-col pb-8">
-          <div class="font-lg black text-center px-4">Get in Touch</div>
+          <h2 class="font-lg black text-center px-4">Get in Touch</h2>
           <form action="" class="bg-white rounded p-2 mn-w-40 md--mw-80">
             <div class="semi-bold font-md pb-1">Contact Form</div>
             <div class="flex gap-2 px-1 md--flex-col">
               <div class="flex flex-col flex-grow">
                 <label for="name" class="medium font-sm">First Name</label>
-                <input name="name" type="text" class="border p-1" />
+                <input id="name" name="name" type="text" class="border p-1" />
               </div>
               <div class="flex flex-col flex-grow">
                 <label for="lastname" class="medium font-sm">Last Name</label>
-                <input name="lastname" type="text" class="border p-1" />
+                <input id="lastname" name="lastname" type="text" class="border p-1" />
               </div>
             </div>
             <div class="flex flex-col flex-grow">
               <label for="email" class="medium font-sm">Email</label>
-              <input name="email" type="text" class="border p-1" />
+              <input id="email" name="email" type="text" class="border p-1" />
             </div>
             <div class="flex flex-col flex-grow px-1">
               <label for="subject" class="medium font-sm">Subject</label>
-              <input name="subject" type="text" class="border p-1" />
+              <input id="subject" name="subject" type="text" class="border p-1" />
             </div>
             <div class="flex flex-col flex-grow">
               <label for="message" class="medium font-sm">Message</label>
               <textarea
+                id="message"
                 name="message"
                 type="text"
                 placeholder="Write your notes or questions here."
