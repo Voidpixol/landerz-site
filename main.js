@@ -9,7 +9,7 @@ const usersUrl = "https://jsonplaceholder.typicode.com/users"
 let testimonials = {}
 let currentTestimonial;
 
-const imgUrl = (n) => `./assets/images/person_${n}.jpg`
+const imgUrl = (n) => `/assets/images/person_${n}.jpg`
 async function getData(url) {
   let data = await fetch(url)
   .then(res => res.json())
