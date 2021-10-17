@@ -316,10 +316,6 @@ section{
 .about-img{
  max-width: 500px;
 }
-.hero-image{
-
-}
-
 @media(max-width: 1024px){
   :root{
     --font-size-sm: 1.8rem;
