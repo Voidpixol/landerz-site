@@ -152,11 +152,15 @@ button{
 {
   width: 100vw;
 }
-
+.flex-1{
+  flex: 1;
+}
+.flex-3{
+  flex: 3;
+}
 .container{
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding: 2rem;
 }
 section{
   overflow: hidden;
@@ -240,9 +244,7 @@ section{
 .mb-1{
   margin-bottom: 1rem;
 }
-.mx-w-250p{
-  max-width: 250px;
-}
+
 .mx-w-50{
   max-width: 50%;
 }
@@ -250,7 +252,7 @@ section{
   max-width: 80%;
 }
 .mx-w-25-percent{
-  max-width: 25%;
+  max-width: 27%;
 }
 .mx-w-fit{
   max-width: fit-content;
@@ -313,7 +315,7 @@ section{
   align-self: center;
 }
 .prototype-img{
-  max-width: 600px;
+  max-width: 800px;
 }
 .about-img{
  max-width: 500px;
