@@ -1,3 +1,7 @@
+import person_1 from './assets/images/person_1.jpg'
+import person_2 from './assets/images/person_2.jpg'
+import person_3 from './assets/images/person_3.jpg'
+import person_4 from './assets/images/person_4.jpg'
 
 const select = (element) => {
   return document.querySelector(element)
@@ -10,7 +14,12 @@ let testimonials = {}
 let currentTestimonial;
 let transition;
 
-const imgUrl = (n) => `/assets/images/person_${n}.jpg`
+const imgUrl = (n) => {
+  if(n === 1) return person_1
+  if(n === 2) return person_2
+  if(n === 3) return person_3
+  else return person_4
+}
 async function getData(url) {
   let data = await fetch(url)
   .then(res => res.json())
@@ -37,11 +46,9 @@ async function init(){
 }
 
 const setTestimonial = (n) => {
-  
   if(n == currentTestimonial) return
-  console.log(n, transition)
   clearTimeout(transition)
-  
+
   let avatar = select('#testimonial-avatar')
   let text = select('#testimonial-text')
   let name = select('#testimonial-name')
