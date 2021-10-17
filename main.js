@@ -8,6 +8,7 @@ const usersUrl = "https://jsonplaceholder.typicode.com/users"
 
 let testimonials = {}
 let currentTestimonial;
+let transition;
 
 const imgUrl = (n) => `/assets/images/person_${n}.jpg`
 async function getData(url) {
@@ -36,8 +37,10 @@ async function init(){
 }
 
 const setTestimonial = (n) => {
-
+  
   if(n == currentTestimonial) return
+  console.log(n, transition)
+  clearTimeout(transition)
   
   let avatar = select('#testimonial-avatar')
   let text = select('#testimonial-text')
@@ -67,7 +70,8 @@ const setTestimonial = (n) => {
     name.innerHTML = testimonials.users[n].name
     text.innerHTML = testimonials.posts[n].body
   }
-  currentTestimonial = currentTestimonial == 4 ? 0 : n
-  setTimeout(() => setTestimonial(currentTestimonial + 1), 5000)
+  currentTestimonial = n;
+  let next = n >= 4 ? 1 : n + 1 
+  transition = setTimeout(() => setTestimonial(next), 5000)
 }
 init()
