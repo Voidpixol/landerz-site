@@ -59,6 +59,9 @@ const setTestimonial = (n) => {
   button.classList.remove('bg-gray-100')
   button.classList.add('bg-green')
   
+  let preloadImage = new Image()
+  preloadImage.src = imgUrl(n)
+  
   if(currentTestimonial != undefined){
     let prev = select(`#control-${currentTestimonial}`)
     prev.classList.remove('bg-green')
@@ -71,7 +74,7 @@ const setTestimonial = (n) => {
       text.innerHTML = testimonials.posts[n].body
       container.classList.remove('fade-out')
       container.classList.add('fade-in')
-    }, 950)
+    }, 980)
   }
   else{
     avatar.src = imgUrl(n)
