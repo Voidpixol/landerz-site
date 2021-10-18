@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./assets/fonts/icomoon/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landerz</title>
-  </head>
 
-  <body>
-    <div id="app bg-gray">
-      <nav
-        class="
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./assets/fonts/icomoon/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landerz</title>
+</head>
+
+<body>
+  <div id="app bg-gray">
+    <nav class="
           nav
           bg-white
           medium
@@ -21,414 +21,242 @@
           shadow
           items-center
           md--justify-between
-        "
-      >
-        <div class="font-lg semi-bold text-center p-1 hide md--show py-2">
+        ">
+      <div class="font-lg semi-bold text-center p-1 hide md--show py-2">
+        Landerz<span class="txt-green">.</span>
+      </div>
+      <span class="icon-menu font-lg md--show hide py-2"></span>
+      <a class="md--hide p-1 cursor-pointer" href="#home">Home</a>
+      <a class="md--hide p-1 cursor-pointer" href="#features">Features</a>
+      <a class="md--hide p-1 cursor-pointer" href="#about">About Us</a>
+      <a class="md--hide p-1 cursor-pointer" href="#testimonials">Testimonials</a>
+      <a class="md--hide p-1 cursor-pointer" href="#blog">Blog</a>
+      <a class="txt-green md--hide p-1 cursor-pointer" href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="bg-white pt-0">
+      <div class="container hero">
+        <div class="font-lg semi-bold text-center p-1 md--hide">
           Landerz<span class="txt-green">.</span>
         </div>
-        <span class="icon-menu font-lg md--show hide py-2"></span>
-        <a class="md--hide p-1 cursor-pointer" href="#">Home</a>
-        <a class="md--hide p-1 cursor-pointer" href="#">Features</a>
-        <a class="md--hide p-1 cursor-pointer" href="#">About Us</a>
-        <a class="md--hide p-1 cursor-pointer" href="#">Testimonials</a>
-        <a class="md--hide p-1 cursor-pointer" href="#">Blog</a>
-        <a class="txt-green md--hide p-1 cursor-pointer" href="#">Contact</a>
-      </nav>
-
-      <section class="hero flex-col bg-white">
-        <div class="container mt-2 md--mt-4 pb-8 sm--mt-4">
-          <div class="font-lg semi-bold text-center p-1 md--hide">
-            Landerz<span class="txt-green">.</span>
+        <div class="flex md--flex-col-reverse">
+          <div class="bg-white hero-block">
+            <h1 class="font-xl black">
+              Grow Your<br />
+              Business<br />
+              Faster
+            </h1>
+            <p class="font-md txt-gray px-1 medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam assumenda ea quo cupiditate facere deleniti fuga
+              officia.
+            </p>
+            <button class="font-sm medium bg-green glow mt-2 cursor-pointer">
+              <a href="#" class="txt-white">Get Started</a>
+            </button>
           </div>
-
-          <div class="flex md--flex-col-reverse">
-            <div class="bg-white mn-w-60 mt-8">
-              <h1 class="font-xl black">
-                Grow Your<br />
-                Business<br />
-                Faster
-              </h1>
-              <p class="font-md txt-gray mx-w-80 md--mw-100 px-1 medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam assumenda ea quo cupiditate facere deleniti fuga
-                officia.
-              </p>
-              <button class="font-sm medium bg-green glow mt-2 cursor-pointer">
-                <a href="#" class="txt-white">Get Started</a>
-              </button>
+          <img src="./assets/images/landing_1.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <section id="features" class="bg-gray features">
+      <div class="container">
+        <h2 class="title">Features</h2>
+        <div class="flex px-1 wrap justify-center gap-2 font-sm">
+          <div class="feature-card">
+            <div class="feature-icon glow">
+              <span class="icon-refresh"></span>
             </div>
-            <img src="./assets/images/landing_1.png" alt="" class="md--mw-80" />
+            <h3 class="semi-bold">Business Consulting</h3>
+            <p class="txt-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="txt-green semi-bold cursor-pointer">Learn More</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon glow ">
+              <span class="icon-store_mall_directory"></span>
+            </div>
+            <h3 class="semi-bold">Market Analysis</h3>
+            <p class="txt-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="txt-green semi-bold cursor-pointer">Learn More</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon glow">
+              <span class="icon-laptop"></span>
+            </div>
+            <h3 class="semi-bold">User Monitoring</h3>
+            <p class="txt-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="txt-green semi-bold cursor-pointer">Learn More</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon glow">
+              <span class="icon-settings_backup_restore"></span>
+            </div>
+            <h3 class="semi-bold">Insurance Consulting</h3>
+            <p class="txt-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="txt-green semi-bold cursor-pointer">Learn More</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon glow">
+              <span class="icon-sentiment_satisfied"></span>
+            </div>
+            <h3 class="semi-bold">Customer Satistified</h3>
+            <p class="txt-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="txt-green semi-bold cursor-pointer">Learn More</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon glow">
+              <span class="icon-power"></span>
+            </div>
+            <h3 class="semi-bold">Plug & Play</h3>
+            <p class="txt-gray">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Perferendis quis molestiae vitae eligendi at.
+            </p>
+            <a href="#" class="txt-green semi-bold cursor-pointer">Learn More</a>
           </div>
         </div>
-      </section>
-      <section class="bg-gray features">
-        <div class="container pb-8 font-sm">
-          <h2 class="text-center font-lg black px-4">Features</h2>
-          <div class="flex px-1 gap-2 wrap justify-center">
-            <div
-              class="
-                bg-white
-                rounded
-                p-2
-                flex flex-col
-                gap-1
-                md--mw-100
-                mx-w-25-percent
-              "
-            >
-              <div
-                class="
-                  avatar
-                  bg-green
-                  glow
-                  mb-1
-                  flex
-                  items-center
-                  justify-center
-                  txt-white
-                "
-              >
-                <span class="icon-refresh font-md"></span>
-              </div>
-              <h3 class="semi-bold">Business Consulting</h3>
-              <p class="txt-gray">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                Perferendis quis molestiae vitae eligendi at.
-              </p>
-              <a href="#" class="txt-green semi-bold cursor-pointer"
-                >Learn More</a
-              >
-            </div>
-            <div
-              class="
-                bg-white
-                rounded
-                p-2
-                flex flex-col
-                gap-1
-                md--mw-100
-                mx-w-25-percent
-              "
-            >
-              <div
-                class="
-                  avatar
-                  bg-green
-                  glow
-                  mb-1
-                  flex
-                  items-center
-                  justify-center
-                  txt-white
-                "
-              >
-                <span class="icon-store_mall_directory font-md"></span>
-              </div>
-              <h3 class="semi-bold">Market Analysis</h3>
-              <p class="txt-gray">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                Perferendis quis molestiae vitae eligendi at.
-              </p>
-              <a href="#" class="txt-green semi-bold cursor-pointer"
-                >Learn More</a
-              >
-            </div>
-            <div
-              class="
-                bg-white
-                rounded
-                p-2
-                flex flex-col
-                gap-1
-                md--mw-100
-                mx-w-25-percent
-              "
-            >
-              <div
-                class="
-                  avatar
-                  bg-green
-                  glow
-                  mb-1
-                  flex
-                  items-center
-                  justify-center
-                  txt-white
-                "
-              >
-                <span class="icon-laptop font-md"></span>
-              </div>
-              <h3 class="semi-bold">User Monitoring</h3>
-              <p class="txt-gray">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                Perferendis quis molestiae vitae eligendi at.
-              </p>
-              <a href="#" class="txt-green semi-bold cursor-pointer"
-                >Learn More</a
-              >
-            </div>
+      </div>
+    </section>
 
-            <div
-              class="
-                bg-white
-                rounded
-                p-2
-                flex flex-col
-                gap-1
-                md--mw-100
-                mx-w-25-percent
-              "
-            >
-              <div
-                class="
-                  avatar
-                  bg-green
-                  glow
-                  mb-1
-                  flex
-                  items-center
-                  justify-center
-                  txt-white
-                "
-              >
-                <span class="icon-settings_backup_restore font-md"></span>
-              </div>
-              <h3 class="semi-bold">Insurance Consulting</h3>
-              <p class="txt-gray">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                Perferendis quis molestiae vitae eligendi at.
-              </p>
-              <a href="#" class="txt-green semi-bold cursor-pointer"
-                >Learn More</a
-              >
-            </div>
-            <div
-              class="
-                bg-white
-                rounded
-                p-2
-                flex flex-col
-                gap-1
-                md--mw-100
-                mx-w-25-percent
-              "
-            >
-              <div
-                class="
-                  avatar
-                  bg-green
-                  glow
-                  mb-1
-                  flex
-                  items-center
-                  justify-center
-                  txt-white
-                "
-              >
-                <span class="icon-sentiment_satisfied font-md"></span>
-              </div>
-              <h3 class="semi-bold">Customer Satistified</h3>
-              <p class="txt-gray">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                Perferendis quis molestiae vitae eligendi at.
-              </p>
-              <a href="#" class="txt-green semi-bold cursor-pointer"
-                >Learn More</a
-              >
-            </div>
-            <div
-              class="
-                bg-white
-                rounded
-                p-2
-                flex flex-col
-                gap-1
-                md--mw-100
-                mx-w-25-percent
-              "
-            >
-              <div
-                class="
-                  avatar
-                  bg-green
-                  glow
-                  mb-1
-                  flex
-                  items-center
-                  justify-center
-                  txt-white
-                "
-              >
-                <span class="icon-power font-md"></span>
-              </div>
-              <h3 class="semi-bold">Plug & Play</h3>
-              <p class="txt-gray">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                Perferendis quis molestiae vitae eligendi at.
-              </p>
-              <a href="#" class="txt-green semi-bold cursor-pointer"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div
-          class="
+    <section id="blog">
+      <div class="
             container
             flex
             justify-between
-            relative
-            px-4
-            md--flex-col md--mw-100
+            md--flex-col
             items-center
-          "
-        > 
-          <div class="flex-3">
-            <img
-            class="prototype-img"
-            src="./assets/images/do_ui_kit_download_cta_floating_devices-2x.png"
-            alt=""
-          />
+          ">
+        <div class="prototype-img">
+          <img src="./assets/images/do_ui_kit_download_cta_floating_devices-2x.png" alt="" />
+        </div>
+
+        <div class="flex flex-col gap-1 font-sm txt-gray w-third">
+          <h2 class="title p-0 text-left ">
+            Create interactive<br />
+            prototypes
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Voluptatem neque nisi architecto autem
+            molestias corrupti officia veniam.
+          </p>
+          <div>
+            <span class="icon-check txt-green-2"></span> Adipisci exepturi
+            aliquam
           </div>
-          
-          <div class="flex flex-col gap-1 font-sm txt-gray">
-            <h2 class="font-lg black txt-black">
+          <div class="pb-1">
+            <span class="icon-check txt-green-2"></span> Deleniti labore
+            reiciendis
+          </div>
+          <div class="bg-white rounded shadow p-1 border w-full">
+            <div class="flex gap-1 items-center">
+              <img class="avatar" src="./assets/images/person_1.jpg" alt="" />
+              <div class="txt-black">
+                <div class="black">Amelia G.</div>
+                <div class="medium">Co-Founder, XYZ Inc.</div>
+              </div>
+            </div>
+            <q class="px-1 italic">
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Ducimus vitae ipsa asperiores
+              inventore aperiam lure?
+            </q>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-gray">
+      <div class="container">
+        <h2 class="title">About Us</h2>
+        <div class="flex md--flex-col justify-between font-sm">
+          <div class="about-img shadow">
+            <img src="./assets/images/about_1.jpg" alt="" />
+          </div>
+
+          <div class="w-third">
+            <h3 class="font-md bold md--pt-2">
               Create Interactive<br />
               Prototypes
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing<br />
-              elit. Voluptatem neque nisi architecto autem<br />
-              molestias corrupti officia veniam.
+            </h3>
+            <p class="txt-gray font-sm px-1">
+              Eos cumque optio dolores exepturi rerum<br />
+              temporibus magni recusandae eveniet, totam omnis<br />
+              consectetur maxime quibusdam expedita dolorem<br />
+              dolor nobis dicta labore quaerat esse magnam<br />
+              unde, aperiam delectus! At maiores, itaque.
             </p>
-            <div>
-              <span class="icon-check txt-green-2"></span> Adipisci exepturi
-              aliquam
-            </div>
-            <div class="pb-1">
-              <span class="icon-check txt-green-2"></span> Deleniti labore
-              reiciendis
-            </div>
-            <div class="bg-white rounded shadow p-1 border">
-              <div class="flex gap-1 items-center">
-                <img class="avatar" src="./assets/images/person_1.jpg" alt="" />
-                <div class="txt-black">
-                  <div class="black">Amelia G.</div>
-                  <div class="medium">Co-Founder, XYZ Inc.</div>
-                </div>
-              </div>
-              <q class="px-1 italic">
-                Lorem ipsum dolor sit amet, consectetur<br />
-                adipisicing elit. Ducimus vitae ipsa asperiores<br />
-                inventore aperiam lure?
-              </q>
-            </div>
+            <button class="font-sm medium bg-green glow mt-1 cursor-pointer">
+              <a href="#" class="txt-white font-sm">Learn More</a>
+            </button>
           </div>
         </div>
-      </section>
-
-      <section class="bg-gray">
-        <div class="container pb-8">
-          <h2 class="text-center font-lg black px-4">About Us</h2>
-          <div class="flex md--flex-col justify-center items-center">
-            <div class="flex-3 flex flex-row items-center justify-center">
-              <img
-                class="about-img rounded shadow md--mw-100"
-                src="./assets/images/about_1.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="md--mw-100">
-              <h3 class="font-md bold md--pt-2">
-                Create Interactive<br />
-                Prototypes
-              </h3>
-              <p class="txt-gray font-sm px-1">
-                Eos cumque optio dolores exepturi rerum<br />
-                temporibus magni recusandae eveniet, totam omnis<br />
-                consectetur maxime quibusdam expedita dolorem<br />
-                dolor nobis dicta labore quaerat esse magnam<br />
-                unde, aperiam delectus! At maiores, itaque.
-              </p>
-              <button class="font-sm medium bg-green glow mt-1 cursor-pointer">
-                <a href="#" class="txt-white font-sm">Learn More</a>
-              </button>
-            </div>
-          </div>
+      </div>
+    </section>
+    <section id="testimonials" >
+      <div class="container flex flex-col items-center">
+        <h2 class="title">Testimonials</h2>
+        <div id="testimonial-container">
+          <img src="./assets/images/person_3.jpg" id="testimonial-avatar" alt="" class="avatar-lg" />
+          <q id="testimonial-text" >
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae
+            explicabo animi minima fuga beatae illum eligendi incidunt
+            consequartur. Amet dolores excepturi earum unde iusto."
+          </q>
+          <p id="testimonial-name">John Smith</p>
         </div>
-      </section>
-      <section>
-        <div class="container pb-8 flex flex-col items-center">
-          <h2 class="text-center font-lg black px-4">Testimonials</h2>
-          <div
-            id="testimonial-container"
-            class="flex justify-center flex-col items-center gap-1"
-          >
-            <img
-              src="./assets/images/person_3.jpg"
-              id="testimonial-avatar"
-              alt=""
-              class="avatar-lg"
-            />
-            <q
-              id="testimonial-text"
-              class="text-center font-md txt-gray italic md--mw-80"
-            >
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae
-              explicabo animi minima fuga beatae illum eligendi incidunt
-              consequartur. Amet dolores excepturi earum unde iusto."
-            </q>
-            <p id="testimonial-name" class="bold p-1 font-sm">John Smith</p>
-          </div>
-          <div id="controls" class="flex px-4">
-            <div id="control-1" class="control-button bg-green"></div>
-            <div id="control-2" class="control-button bg-gray-100"></div>
-            <div id="control-3" class="control-button bg-gray-100"></div>
-            <div id="control-4" class="control-button bg-gray-100"></div>
-          </div>
+        <div id="controls" class="flex px-4">
+          <div id="control-1" class="control-button bg-green"></div>
+          <div id="control-2" class="control-button bg-gray-100"></div>
+          <div id="control-3" class="control-button bg-gray-100"></div>
+          <div id="control-4" class="control-button bg-gray-100"></div>
         </div>
-      </section>
-      <section class="bg-gray">
-        <div class="container flex items-center flex-col pb-8">
-          <h2 class="font-lg black text-center px-4">Get in Touch</h2>
-          <form action="" class="bg-white rounded p-2 mn-w-40 md--mw-80">
-            <div class="semi-bold font-md pb-1">Contact Form</div>
-            <div class="flex gap-2 px-1 md--flex-col">
-              <div class="flex flex-col flex-grow">
-                <label for="name" class="medium font-sm">First Name</label>
-                <input id="name" name="name" type="text" class="border p-1" />
-              </div>
-              <div class="flex flex-col flex-grow">
-                <label for="lastname" class="medium font-sm">Last Name</label>
-                <input id="lastname" name="lastname" type="text" class="border p-1" />
-              </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-gray">
+      <div class="container flex items-center flex-col">
+        <h2 class="title">Get in Touch</h2>
+        <form action="" id="contact-form">
+          <div class="semi-bold font-md pb-1">Contact Form</div>
+          <div class="flex gap-2 px-1 md--flex-col">
+            <div class="flex flex-col flex-grow">
+              <label for="name" class="medium font-sm">First Name</label>
+              <input id="name" name="name" type="text" class="border p-1" />
             </div>
             <div class="flex flex-col flex-grow">
-              <label for="email" class="medium font-sm">Email</label>
-              <input id="email" name="email" type="text" class="border p-1" />
+              <label for="lastname" class="medium font-sm">Last Name</label>
+              <input id="lastname" name="lastname" type="text" class="border p-1" />
             </div>
-            <div class="flex flex-col flex-grow px-1">
-              <label for="subject" class="medium font-sm">Subject</label>
-              <input id="subject" name="subject" type="text" class="border p-1" />
-            </div>
-            <div class="flex flex-col flex-grow">
-              <label for="message" class="medium font-sm">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                type="text"
-                placeholder="Write your notes or questions here."
-                class="border p-1"
-                rows="7"
-                cols="50"
-              ></textarea>
-              <button
-                class="
+          </div>
+          <div class="flex flex-col flex-grow">
+            <label for="email" class="medium font-sm">Email</label>
+            <input id="email" name="email" type="text" class="border p-1" />
+          </div>
+          <div class="flex flex-col flex-grow px-1">
+            <label for="subject" class="medium font-sm">Subject</label>
+            <input id="subject" name="subject" type="text" class="border p-1" />
+          </div>
+          <div class="flex flex-col flex-grow">
+            <label for="message" class="medium font-sm">Message</label>
+            <textarea id="message" name="message" type="text" placeholder="Write your notes or questions here."
+              class="border p-1" rows="7" cols="50"></textarea>
+            <button class="
                   font-sm
                   medium
                   bg-green
@@ -436,20 +264,17 @@
                   cursor-pointer
                   txt-white
                   mx-1 mx-w-fit
-                "
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <section>
-        <div class="txt-gray text-center pt-8 pb-4 font-sm">
-          Copyright ©️ 2019 All rights reserved.
-        </div>
-      </section>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+                ">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="text-center font-sm">
+      Copyright ©️ 2019 All rights reserved.
+    </section>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
