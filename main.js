@@ -109,7 +109,16 @@ function toggleMenu(event)
 {
   const mobileMenu = select('.mobile-menu');
   menuOpen = !menuOpen;
-  show(event, mobileMenu, menuOpen)
+  if(menuOpen){
+    mobileMenu.classList.remove('slide-out')
+    mobileMenu.classList.add('slide-in')
+  }
+  else{
+    mobileMenu.classList.add('slide-out')
+    mobileMenu.classList.remove('slide-in')
+    
+  }
+  setTimeout(() => show(event, mobileMenu, menuOpen), 240)
 }
 function initButtons() {
   const modal = select('.modal');

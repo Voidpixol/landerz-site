@@ -89,11 +89,11 @@ button:active{
   transition: all 0.10s ease-out;
 }
 .animate-press:hover{
-  filter: brightness(1.05) drop-shadow(10px 10px 10px #00d2b640);
+  filter: brightness(1.05) drop-shadow(5px 5px 5px #00000040);
   transform: scale(1.025)
 }
 .animate-press:active{
-  filter: brightness(.95) drop-shadow(2px 2px 2px #00d2b640);
+  filter: brightness(.95) drop-shadow(2px 2px 2px #00000040);
   transform: scale(.95)
 }
 
@@ -106,7 +106,7 @@ button:active{
   height: 100vh;
   background-color: rgba(0,0,0, 0.2);
   backdrop-filter: blur(5px);
-  z-index: 2;
+  z-index: 1;
 }
 #modal-close{
   position: absolute;
@@ -491,27 +491,20 @@ button:active{
 .fade-in{
   animation: fade-in 1s ease-out;
 }
+.slide-in{
+  animation: slide-in 0.25s ease-out;
+}
+.slide-out{
+  animation: slide-out 0.25s linear;
+}
 .fade-out{
   animation: fade-out 1s linear;
 }
-@keyframes fade-in {
-  from { 
-    opacity: 0; 
-  }
-  to   
-  { 
-    opacity: 1;
-  }
-}
-@keyframes fade-out {
-  from { 
-    opacity: 1;
-  }
-  to   
-  { 
-    opacity: 0;
-  }
-}
+
+@keyframes slide-in { from {right: -500px} to {right: 0}}
+@keyframes slide-out { from {right: 0} to {right: -500px}}
+@keyframes fade-in {from { opacity: 0; }to { opacity: 1;}}
+@keyframes fade-out {from { opacity: 1;}to { opacity: 0;}}
 /* END - Animations*/
 
 /* IPAD */
