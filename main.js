@@ -1,11 +1,16 @@
 
-const select = (element) => {
+const select = (element, type = "") => {
+  if(type === "all") return document.querySelectorAll(element)
   return document.querySelector(element)
 }
 
 const postsUrl = "https://jsonplaceholder.typicode.com/posts"
 const usersUrl = "https://randomuser.me/api/0.8/?results=4"
 
+//Mobile Navigation
+let menuOpen = false;
+
+//Testimonials
 let testimonials = {}
 let currentTestimonial;
 const transitionTimer = 10;
@@ -32,12 +37,11 @@ async function getData(url) {
   return data
 }
 
-async function init(){
+async function initTestimonials(){
   let users = await getData(usersUrl)
   let posts = await getData(postsUrl)
-  console.log(users)
   users = processUserData(users)
-  console.log(users)
+  
   if(Object.keys(posts).length === 0 || Object.keys(users).length === 0) {
     console.error('ERROR FETCHING DATA')
     return;
@@ -93,4 +97,31 @@ const setTestimonial = (n) => {
   let next = n >= 4 ? 1 : n + 1 
   transition = setTimeout(() => setTestimonial(next), transitionTimer * 1000)
 }
-init()
+function show(event, element, show)
+{
+  event.preventDefault()
+  if(show){
+    element.classList.remove('hide')
+  }
+  else element.classList.add('hide')
+}
+function toggleMenu(event)
+{
+  const mobileMenu = select('.mobile-menu');
+  menuOpen = !menuOpen;
+  show(event, mobileMenu, menuOpen)
+}
+function initButtons() {
+  const modal = select('.modal');
+  const submitButton = select('#submit');
+  const closeButton = select('#modal-close');
+  const hamburger = select('#hamburger');
+  const mobileLinks = select('.mobile-link', 'all');
+
+  mobileLinks.forEach(item => item.addEventListener("click", event => toggleMenu(event)))
+  hamburger.addEventListener("click", event => toggleMenu(event))
+  submitButton.addEventListener("click", event => show(event, modal, true));
+  closeButton.addEventListener("click", event => show(event, modal, false));
+}
+initTestimonials()
+initButtons()

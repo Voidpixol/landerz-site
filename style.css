@@ -56,6 +56,7 @@ button{
   padding: 1rem 2.5rem;
   border-radius: 4rem;
   font-size: var(--font-size-md);
+  color: var(--color-white);
   transition: all 0.10s ease-out;
 }
 button:hover{
@@ -94,6 +95,62 @@ button:active{
 .animate-press:active{
   filter: brightness(.95) drop-shadow(2px 2px 2px #00d2b640);
   transform: scale(.95)
+}
+
+.modal{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+#modal-close{
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  padding: 16px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-green);
+  border-radius: 100%;
+  color: var(--color-white);
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+#modal-container{
+  padding: 4rem;
+  background-color: var(--color-white);
+  border-radius: 4px;
+  filter: drop-shadow(4px 4px 10px #00000010);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 1rem; 
+}
+.modal-container > span{
+  font-size: 2rem;
+}
+.mobile-menu{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  top: 4rem;
+  justify-content: center;
+  padding-top: 4rem;
+  font-size: var(--font-size-lg);
+}
+.mobile-menu > div{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 /* END - General*/
 

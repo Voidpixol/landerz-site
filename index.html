@@ -25,15 +25,31 @@
       <div class="font-lg semi-bold text-center p-1 hide md--show py-2">
         Landerz<span class="txt-green">.</span>
       </div>
-      <span class="icon-menu font-lg md--show hide py-2"></span>
+      <span id="hamburger" class="icon-menu font-lg md--show hide py-2"></span>
       <a class="md--hide p-1 cursor-pointer animate-press" href="#home">Home</a>
       <a class="md--hide p-1 cursor-pointer animate-press" href="#features">Features</a>
       <a class="md--hide p-1 cursor-pointer animate-press" href="#about">About Us</a>
       <a class="md--hide p-1 cursor-pointer animate-press" href="#testimonials">Testimonials</a>
       <a class="md--hide p-1 cursor-pointer animate-press" href="#blog">Blog</a>
       <a class="txt-green md--hide p-1 cursor-pointer animate-press" href="#contact">Contact</a>
+      <div class="mobile-menu hide">
+        <div>
+          <a class="mobile-link cursor-pointer animate-press" href="#home">Home</a>
+          <a class="mobile-link cursor-pointer animate-press" href="#features">Features</a>
+          <a class="mobile-link cursor-pointer animate-press" href="#about">About Us</a>
+          <a class="mobile-link cursor-pointer animate-press" href="#testimonials">Testimonials</a>
+          <a class="mobile-link cursor-pointer animate-press" href="#blog">Blog</a>
+          <a class="mobile-link cursor-pointer animate-press" href="#contact">Contact</a>
+        </div>
+      </div>
     </nav>
-
+    <div class="hide modal">
+      <div id="modal-container">
+        <div id="modal-close" class="animate-press">X</div>
+        <h3>Message has been sent <span class="icon-drafts"></span> </h3>
+        <p>Thanks for reaching out, our team will be in contact!</p>
+      </div>
+    </div>
     <section id="home" class="bg-white pt-0">
       <div class="container hero">
         <div class="font-lg semi-bold text-center p-1 md--hide">
@@ -52,7 +68,7 @@
               officia.
             </p>
             <button class="font-sm medium bg-green glow mt-2 cursor-pointer">
-              <a href="#contact" class="txt-white">Get Started</a>
+              Get Started
             </button>
           </div>
           <img src="./assets/images/landing_1.png" alt="" class="w-full" />
@@ -202,7 +218,7 @@
               unde, aperiam delectus! At maiores, itaque.
             </p>
             <button class="font-sm medium bg-green glow mt-1 cursor-pointer">
-              <a href="#" class="txt-white font-sm">Learn More</a>
+              Learn More
             </button>
           </div>
         </div>
@@ -256,7 +272,7 @@
             <label for="message" class="medium font-sm">Message</label>
             <textarea id="message" name="message" type="text" placeholder="Write your notes or questions here."
               class="border p-1" rows="7" cols="50"></textarea>
-            <button class="
+            <button id="submit" class="
                   font-sm
                   medium
                   bg-green
