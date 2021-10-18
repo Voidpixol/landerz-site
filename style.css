@@ -56,6 +56,15 @@ button{
   padding: 1rem 2.5rem;
   border-radius: 4rem;
   font-size: var(--font-size-md);
+  transition: all 0.10s ease-out;
+}
+button:hover{
+  filter: brightness(1.05) drop-shadow(10px 10px 10px #00d2b640);
+  transform: scale(1.025)
+}
+button:active{
+  filter: brightness(.95) drop-shadow(2px 2px 2px #00d2b640);
+  transform: scale(.95)
 }
 .title{
   font-size: var(--font-size-lg);
@@ -74,6 +83,17 @@ button{
   width: 128px;
   height: 128px;
   border-radius: 100%;
+}
+.animate-press{
+  transition: all 0.10s ease-out;
+}
+.animate-press:hover{
+  filter: brightness(1.05) drop-shadow(10px 10px 10px #00d2b640);
+  transform: scale(1.025)
+}
+.animate-press:active{
+  filter: brightness(.95) drop-shadow(2px 2px 2px #00d2b640);
+  transform: scale(.95)
 }
 /* END - General*/
 
@@ -111,7 +131,12 @@ button{
   width: calc(33% - 5.5rem);
   padding: 2rem;
   background-color: var(--color-white);
-  border-radius: 4px; 
+  border-radius: 4px;
+  transition: all 0.10s ease-out;
+}
+.feature-card:hover{
+  transform: scale(1.05);
+  filter: drop-shadow(10px 10px 10px #00000005);
 }
 /* END - Features*/
 
@@ -142,6 +167,10 @@ button{
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+#testimonial-avatar{
+  border-radius: 100%;
+  width: 148px;
 }
 #testimonial-text{
   text-align: center;
@@ -280,6 +309,9 @@ button{
 .w-vw
 {
   width: 100vw;
+}
+.w-fit{
+  width: fit-content;
 }
 .gap-1{
   gap: 1rem;
@@ -467,11 +499,6 @@ button{
   .hero-block > button{
     margin-top: 4px;
   }
-
-  .about-img{
-    width: 100%;
-  }
-
   .md--justify-between{
     justify-content: space-between;
   }
@@ -486,27 +513,6 @@ button{
   }
   .md--flex-col-reverse{
     flex-direction: column-reverse;
-  }
-  .md--mw-100{
-    width: calc(100% - 4rem)
-  }
-  .md--mw-80{
-    max-width: 80%;
-    min-width: 80%;
-  }
-  .md--pt-2{
-    padding-top: 2rem;
-  }
-  .md--mt-4{
-    margin-top: 4rem;
-  }
-  .avatar{
-    width: 80px;
-    height: 80px;
-  }
-  .avatar-lg{
-    width: 256px;
-    height: 256px;
   }
   .control-button{
     width: 16px;
